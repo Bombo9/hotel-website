@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bombo Hotel - Book Your Stay</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/hotel.png">
+    
+</head>
+<body>
+    <header>
+        <h1>Welcome to Bombo Festus Matsitsa Hotel</h1>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#booking">Book a Room</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#room-list">Check Room Availability</a> <!-- New link -->
+        </nav>
+    </header>    
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Free Wi-Fi</li>
+            <li>24/7 Room Service</li>
+            <li>Luxury Spa</li>
+            <li>Swimming Pool</li>
+            <li>Gourmet Restaurant</li>
+        </ul>
+    </section>
+    
+    <section id="booking">
+        <h2>Book a Room</h2>
+        <form id="booking-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="room-type">Room Type:</label>
+            <select id="room-type" name="room-type" required>
+                <option value="single">Single</option>
+                <option value="double">Double</option>
+                <option value="suite">Suite</option>
+            </select>
+    
+            <label for="room-number">Room Number:</label>
+            <input type="text" id="room-number" name="room-number" required> <!-- Added field -->
+    
+            <label for="check-in">Check-In Date:</label>
+            <input type="date" id="check-in" name="check-in" required>
+    
+            <label for="check-out">Check-Out Date:</label>
+            <input type="date" id="check-out" name="check-out" required>
+    
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="images/room 1.jpg" alt="Room Image 1">
+            <img src="images/room 2.jpg" alt="Room Image 2">
+            <img src="images/room3.jpg" alt="Room Image 3">
+            <img src="images/food1.jpg" alt="Food Image 1">
+            <img src="images/food2.jpg" alt="Food Image 2">
+            <img src="images/food3.jpg" alt="Food Image 3">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Bombo Festus Matsitsa Hotel. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
